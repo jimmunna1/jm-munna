@@ -1,11 +1,11 @@
 {
-  "hero_name": "JM Munna",
-  "hero_role": "Video Editor & Student",
   "hero_intro": "Hi, I'm JM Munna — a video editor and student who enjoys turning ideas into engaging visual stories. I'm constantly learning, experimenting with new techniques, and refining my craft to create content that feels intentional and alive.",
-  "hero_image": "",
-  "cta_primary_text": "View My Work",
   "cta_secondary_text": "Contact Me",
-  "about_preview": "I'm a video editor and student based on building a career one project at a time. I care about pacing, rhythm, and story — the small decisions that make a cut feel invisible and a video feel complete.",
+  "hero_name": "JM Munna",
   "contact_cta_heading": "Have a project in mind?",
+  "hero_image": "images/uploads/d1c4e745-45c0-47eb-ab6b-7fa4abe72570.jfif",
+  "about_preview": "I'm a video editor and student based on building a career one project at a time. I care about pacing, rhythm, and story — the small decisions that make a cut feel invisible and a video feel complete.",
+  "cta_primary_text": "View My Work",
+  "hero_role": "Video Editor & Student",
   "contact_cta_text": "I'm always open to new ideas, collaborations, and creative work. Let's talk about what you're making."
 }
