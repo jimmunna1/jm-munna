@@ -1,0 +1,12 @@
+{
+  "intro": "Add your real education history from the admin panel — this is placeholder content.",
+  "items": [
+    {
+      "institution": "Your Institution Name",
+      "degree": "Your Degree / Program",
+      "start_date": "2022",
+      "end_date": "Present",
+      "description": "Short note about what you're studying or focusing on."
+    }
+  ]
+}

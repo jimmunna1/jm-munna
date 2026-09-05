@@ -1,0 +1,13 @@
+{
+  "intro": "Tools and techniques I use to bring a project from raw footage to finished cut.",
+  "items": [
+    { "name": "Video Editing", "note": "Assembling footage into a paced, coherent story." },
+    { "name": "Storytelling", "note": "Structuring a cut so it holds attention start to finish." },
+    { "name": "Color Correction", "note": "Balancing tone and mood across a timeline." },
+    { "name": "Motion Graphics", "note": "Simple titles, transitions, and animated elements." },
+    { "name": "Content Creation", "note": "Planning and producing short-form visual content." },
+    { "name": "Adobe Premiere Pro", "note": "Primary editing software for most projects." },
+    { "name": "DaVinci Resolve", "note": "Used for color grading and select edits." },
+    { "name": "Adobe After Effects", "note": "Used for motion graphics and visual effects." }
+  ]
+}

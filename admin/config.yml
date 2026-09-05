@@ -1,0 +1,208 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://your-site-name.netlify.app
+display_url: https://your-site-name.netlify.app
+logo_url: /favicon/favicon.ico
+
+collections:
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "settings"
+        label: "Site Settings"
+        file: "content/settings.json"
+        fields:
+          - { label: "Website Title", name: "site_title", widget: "string" }
+          - { label: "Logo Text", name: "logo_text", widget: "string" }
+          - { label: "Logo Image", name: "logo_image", widget: "image", required: false }
+          - { label: "Favicon", name: "favicon", widget: "image", required: false, hint: "Square image, works best as .ico or .png" }
+          - { label: "Profile Image (used when sharing links)", name: "profile_image", widget: "image", required: false }
+          - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Shown in search engine results" }
+          - label: "Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+              - { label: "YouTube URL", name: "youtube", widget: "string", required: false }
+
+  - name: "home"
+    label: "Home Page"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "content/home.json"
+        fields:
+          - { label: "Hero Name", name: "hero_name", widget: "string" }
+          - { label: "Hero Role", name: "hero_role", widget: "string" }
+          - { label: "Hero Introduction", name: "hero_intro", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
+          - { label: "Primary Button Text", name: "cta_primary_text", widget: "string" }
+          - { label: "Secondary Button Text", name: "cta_secondary_text", widget: "string" }
+          - { label: "About Preview Text", name: "about_preview", widget: "text", required: false }
+          - { label: "Contact Section Heading", name: "contact_cta_heading", widget: "string" }
+          - { label: "Contact Section Text", name: "contact_cta_text", widget: "text" }
+
+  - name: "about"
+    label: "About"
+    files:
+      - name: "about"
+        label: "About Page"
+        file: "content/about.json"
+        fields:
+          - { label: "Profile Image", name: "profile_image", widget: "image", required: false }
+          - { label: "Short Intro", name: "intro", widget: "text" }
+          - { label: "Full Biography", name: "biography", widget: "text" }
+          - { label: "Interests", name: "interests", widget: "text" }
+          - { label: "Current Focus", name: "current_focus", widget: "text" }
+          - { label: "Growth Mindset Note", name: "growth_note", widget: "text" }
+
+  - name: "skills"
+    label: "Skills"
+    files:
+      - name: "skills"
+        label: "Skills"
+        file: "content/skills.json"
+        fields:
+          - { label: "Section Intro", name: "intro", widget: "text", required: false }
+          - label: "Skills"
+            name: "items"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Skill Name", name: "name", widget: "string" }
+              - { label: "Short Note", name: "note", widget: "string", required: false }
+
+  - name: "education"
+    label: "Education"
+    files:
+      - name: "education"
+        label: "Education"
+        file: "content/education.json"
+        fields:
+          - { label: "Section Intro", name: "intro", widget: "text", required: false }
+          - label: "Education Items"
+            name: "items"
+            widget: "list"
+            summary: "{{degree}} — {{institution}}"
+            fields:
+              - { label: "Institution", name: "institution", widget: "string" }
+              - { label: "Degree / Program", name: "degree", widget: "string" }
+              - { label: "Start Date", name: "start_date", widget: "string", hint: "e.g. 2022" }
+              - { label: "End Date", name: "end_date", widget: "string", required: false, hint: "Leave blank or write 'Present'" }
+              - { label: "Description", name: "description", widget: "text", required: false }
+
+  - name: "experience"
+    label: "Experience"
+    files:
+      - name: "experience"
+        label: "Experience"
+        file: "content/experience.json"
+        fields:
+          - { label: "Message Shown When No Experience Yet", name: "empty_message", widget: "string" }
+          - label: "Experience Items"
+            name: "items"
+            widget: "list"
+            required: false
+            summary: "{{position}} — {{organization}}"
+            fields:
+              - { label: "Position", name: "position", widget: "string" }
+              - { label: "Organization", name: "organization", widget: "string" }
+              - { label: "Start Date", name: "start_date", widget: "string" }
+              - { label: "End Date", name: "end_date", widget: "string", required: false, hint: "Leave blank if this is current" }
+              - { label: "Description", name: "description", widget: "text", required: false }
+
+  - name: "projects"
+    label: "Projects / Work"
+    files:
+      - name: "projects"
+        label: "Projects"
+        file: "content/projects.json"
+        fields:
+          - { label: "Section Intro", name: "intro", widget: "text", required: false }
+          - label: "Projects"
+            name: "items"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "string", required: false }
+              - { label: "Cover Image", name: "cover_image", widget: "image", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Tools Used", name: "tools", widget: "string", required: false, hint: "Comma-separated, e.g. Premiere Pro, After Effects" }
+              - { label: "Project Link", name: "link", widget: "string", required: false }
+              - { label: "Show in Featured Work", name: "featured", widget: "boolean", default: false }
+
+  - name: "photos"
+    label: "Photo Gallery"
+    files:
+      - name: "photos"
+        label: "Photo Gallery"
+        file: "content/photos.json"
+        fields:
+          - { label: "Section Intro", name: "intro", widget: "text", required: false }
+          - label: "Photos"
+            name: "items"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
+              - { label: "Show in Featured Photos", name: "featured", widget: "boolean", default: false }
+
+  - name: "videos"
+    label: "Videos"
+    files:
+      - name: "videos"
+        label: "Videos"
+        file: "content/videos.json"
+        fields:
+          - { label: "Section Intro", name: "intro", widget: "text", required: false }
+          - label: "Videos"
+            name: "items"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Video URL (Facebook or YouTube)", name: "video_url", widget: "string", hint: "Paste the full Facebook or YouTube video link" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+              - { label: "Show in Featured Videos", name: "featured", widget: "boolean", default: false }
+
+  - name: "certificates"
+    label: "Certificates"
+    files:
+      - name: "certificates"
+        label: "Certificates"
+        file: "content/certificates.json"
+        fields:
+          - { label: "Section Intro", name: "intro", widget: "text", required: false }
+          - label: "Certificates"
+            name: "items"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Certificate Image", name: "image", widget: "image", required: false }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Issuing Organization", name: "issuer", widget: "string", required: false }
+              - { label: "Date", name: "date", widget: "string", required: false }
+              - { label: "Link", name: "link", widget: "string", required: false }
+
+  - name: "contact"
+    label: "Contact"
+    files:
+      - name: "contact"
+        label: "Contact"
+        file: "content/contact.json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Text", name: "text", widget: "text" }
+          - { label: "Email (optional)", name: "email", widget: "string", required: false }
+          - { label: "Phone (optional)", name: "phone", widget: "string", required: false }
+          - { label: "CV File (PDF, optional)", name: "cv_file", widget: "file", required: false }

@@ -1,0 +1,23 @@
+{
+  "intro": "A selection of edits and creative projects. Add real projects from the admin panel.",
+  "items": [
+    {
+      "title": "Sample Project One",
+      "category": "Short Film Edit",
+      "cover_image": "",
+      "description": "Placeholder project — replace with a real title, image, and description from the admin panel.",
+      "tools": "Premiere Pro, DaVinci Resolve",
+      "link": "",
+      "featured": true
+    },
+    {
+      "title": "Sample Project Two",
+      "category": "Promo Video",
+      "cover_image": "",
+      "description": "Placeholder project — replace with a real title, image, and description from the admin panel.",
+      "tools": "After Effects, Premiere Pro",
+      "link": "",
+      "featured": true
+    }
+  ]
+}
