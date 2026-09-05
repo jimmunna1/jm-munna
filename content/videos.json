@@ -1,4 +1,11 @@
 {
   "intro": "Selected videos, hosted on Facebook and YouTube. Add real videos from the admin panel.",
-  "items": []
+  "items": [
+    {
+      "featured": false,
+      "video_url": "https://www.facebook.com/share/r/19B667YrB9/",
+      "thumbnail": "images/uploads/9b761315-f892-4b7b-991e-3ace7e813199.jfif",
+      "title": "JM Vision"
+    }
+  ]
 }
