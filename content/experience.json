@@ -1,4 +1,12 @@
 {
   "empty_message": "Currently building experience and working on personal and creative projects.",
-  "items": []
+  "items": [
+    {
+      "position": "Data Entry Operator",
+      "organization": "Personal Practice",
+      "start_date": "2023",
+      "end_date": "2024",
+      "description": "Practicing data entry, MS Word, Excel, web research, typing, and basic computer operations. Developing accuracy, attention to detail, and time-management skills."
+    }
+  ]
 }
