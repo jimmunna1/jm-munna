@@ -2,12 +2,6 @@
   "intro": "A selection of personal and creative photos. Add real photos from the admin panel.",
   "items": [
     {
-      "featured": true,
-      "image": "12c71c56-9107-4433-9a42-42b52d9474de.png",
-      "title": "Professional Portrait — JM Munna",
-      "caption": "A professional portrait reflecting my passion for creativity, digital content creation, and continuous learning."
-    },
-    {
       "featured": false,
       "image": "/images/uploads/jm_munna_website_gallery.jpg"
     }
